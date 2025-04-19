@@ -24,7 +24,7 @@ jobs:
         run: mvn clean package
 
       - name: Upload built JAR
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Updated from v3 to v4
         with:
           name: ServerMonitorPlugin
           path: target/*.jar
